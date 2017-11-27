@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   word;
   history = [];
   roundDuration = 10;
+  settingEdit = false;
 
   @ViewChild('frm') form;
   gameTitle = '';
