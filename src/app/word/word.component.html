@@ -1,13 +1,18 @@
 <div class="word">
   <div class="text">{{ word }}</div>
 
-  <button
-    (click)="played.emit({word: word, guessed: true})"
-    [class.active]="guessed === true"
-  >+1</button>
+  <div class="buttons">
+    <button
+            (click)="played.emit({word: word, guessed: true})"
+            [class.active]="guessed === true"
+            class="right"
+    >&nbsp;</button>
 
-  <button
-    (click)="played.emit({word: word, guessed: false})"
-    [class.active]="guessed === false"
-  >-1</button>
+    <button
+            (click)="played.emit({word: word, guessed: false})"
+            [class.active]="guessed === false"
+            class="wrong"
+    >&nbsp;</button>
+  </div>
+
 </div>

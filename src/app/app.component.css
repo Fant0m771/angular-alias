@@ -13,3 +13,14 @@ app-timer {
 label {
   display: block
 }
+
+.settings-zone ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-over {
+  padding: 30px 0;
+  font-size: 30px;
+  font-weight: bold;
+}

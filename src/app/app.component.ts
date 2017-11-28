@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   gameOver = false;
   word;
   history = [];
-  roundDuration = 10;
+  roundDuration = 70;
   settingEdit = false;
 
   @ViewChild('frm') form;
@@ -35,13 +35,8 @@ export class AppComponent implements OnInit {
 
   // todo: make sure score >= 0
   getScore() {
-    console.log('calc score');
     return Math.max(this.history.reduce((acc, word) => {
       return word.guessed ? ++acc : --acc;
     }, 0));
-  }
-
-  onFormSubmit(frm) {
-    console.log(frm);
   }
 }

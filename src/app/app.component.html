@@ -23,7 +23,7 @@
 </div>
 
 <div class="text-center">
-  Score: {{ getScore() }}
+  Счет: {{ getScore() }}
 </div>
 
 <div class="word">
@@ -47,7 +47,7 @@
 </button>
 
 <div [hidden]="!started || gameOver" class="text-center">
-  Time left:
+  Осталось времени:
   <app-timer
     #timer
     [interval]="roundDuration"
@@ -61,5 +61,5 @@
             [guessed]="word.guessed"
             (played)="onWordReplayed($event)">
   </app-word>
-  <div class="text-center">GAME OVER</div>
+  <div class="text-center game-over">Конец Игры</div>
 </div>
