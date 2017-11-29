@@ -1,3 +1,9 @@
-<p>
-  {{ interval }}
-</p>
+<div>
+  <div class="text-center">{{ interval }}</div>
+
+  <div>
+    <ng-template ngFor let-item [ngForOf]="createRange(interval)" let-currentElementIndex="index+1">
+      <span>.</span>
+    </ng-template>
+  </div>
+</div>

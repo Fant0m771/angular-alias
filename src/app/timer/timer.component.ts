@@ -16,7 +16,8 @@ export class TimerComponent implements OnInit {
 
   ngOnInit() { }
 
-  start() {
+  start(seconds) {
+    this.interval = seconds === undefined ? this.interval : seconds;
     // this.timeLeft = this.interval;
     const handle = setInterval(() => {
       this.interval --;
@@ -25,6 +26,19 @@ export class TimerComponent implements OnInit {
         this.finish.emit();
       }
     }, 1000);
+  }
+
+  restart() {
+   console.warn(this.interval);
+  }
+
+
+  createRange(number) {
+   var items: number[] = [];
+   for (let i = 1; i <= number; i++) {
+      items.push(i);
+   }
+   return items;
   }
 
 }

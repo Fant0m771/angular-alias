@@ -18,8 +18,14 @@
   width: 80px;
   height: 80px;
   border: none;
+  outline: none;
   background-position: 50% 50%;
   background-size: 80px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .right {
@@ -31,3 +37,21 @@
   background: url('../../images/wrong.jpg') no-repeat;
 }
 
+
+.history .buttons button {
+  background-size: 35px;
+  width: 40px;
+  height: 40px;
+}
+
+button .active {
+  opacity: 1;
+}
+
+.false-ly .word {
+  background-color: palevioletred;
+}
+
+.history .true-ly .word {
+  background-color: palevioletred;
+}

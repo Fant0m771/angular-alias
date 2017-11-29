@@ -11,8 +11,9 @@ export class AppComponent implements OnInit {
   gameOver = false;
   word;
   history = [];
-  roundDuration = 70;
+  roundDuration = 5;
   settingEdit = false;
+  inProgress = false;
 
   @ViewChild('frm') form;
   gameTitle = '';
@@ -21,7 +22,7 @@ export class AppComponent implements OnInit {
 
   async ngOnInit() {
     this.word = await this.vocabulary.getNextWord();
-    console.log(this.form);
+    //console.log(this.form);
   }
 
   async onWordPlayed(word) {

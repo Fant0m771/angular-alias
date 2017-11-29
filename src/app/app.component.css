@@ -3,13 +3,23 @@ app-timer {
 }
 .start-btn {
   display: block;
-  margin: 0 auto;
-  width: 100px;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 30px;
 }
+
 .history, .word {
-  max-width: 280px;
   margin: 0 auto;
 }
+
+.history .results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+}
+
 label {
   display: block
 }
@@ -23,4 +33,10 @@ label {
   padding: 30px 0;
   font-size: 30px;
   font-weight: bold;
+  display: block;
+}
+
+.score {
+  font-size: 22px;
+  padding: 5px;
 }

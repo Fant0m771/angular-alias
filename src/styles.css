@@ -2,3 +2,42 @@
 .text-center {
   text-align: center;
 }
+
+.history .false-ly button.right {
+  display: none;
+}
+
+.history .true-ly button.wrong {
+  display: none;
+}
+
+.history .buttons button.wrong.active,
+.history .buttons button.right.active {
+  flex: 0 0 100%;
+}
+
+.true-ly .word {
+  border: 1px solid lightgreen;
+  margin-top: 10px;
+}
+
+.false-ly .word {
+  margin-top: 10px;
+}
+
+.history .word {
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.history .word .text {
+  font-size: 16px;
+}
+
+
+.start-btn {
+  width: 100%;
+  border: 0;
+  background: yellow;
+}
